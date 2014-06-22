@@ -1,0 +1,11 @@
+//Dynamic creation of a task
+
+4.times { counter ->
+	task "task$counter" << {
+		println "I'm task number $counter"
+	}
+	
+}
+
+//Accessing a task via Api - adding a dependency
+task0.dependsOn task2, task3
